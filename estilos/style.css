@@ -389,6 +389,7 @@ li:hover {
     flex-direction: column;
     justify-content: top;
     align-items: center;
+    width: 50%;
 }
 
 .foot h1 {
