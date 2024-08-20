@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap'); /*Lato*/
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap'); /*'Merriweather'*/
+
+@import url('https://fonts.googleapis.com/css2?family=Grey+Qo&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');  /* 'Grey Qo' */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap'); /*Gruppo*/
+
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Jura:wght@300..700&display=swap'); /*Jura*/
+
+
+/* .Paleta {
+color: rgba(0, 0, 0, 1);
+color: #A4947E; - n faz parte
+color: rgba(166, 159, 149, 1);
+color: rgba(122, 122, 122, 1); 
+color: rgba(255, 255, 255, 1); 
+color: rgba(96, 107, 115, 1); 
+} */
+
+
+
+
+
+/*
+0 até 768px = mobile
+
+Medium devices (landscape tablets, 768px and up)
+@media screen and (min-width: 768px) and (max-width: 992px) {...}
+
+Large devices (laptops/desktops, 992px and up)
+@media screen and (min-width: 992px) and (max-width: 1200px) {...}
+
+Extra large devices (large laptops and desktops, 1200px and up) 
+@media screen and (min-width: 1200px) {...} 
+*/
+
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+}
+
+html, body {
+    width: 100;
+    height: 100vh;
+}
+
+
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    background-color: #202332; 
+    width: 100%;
+    height: 10%;
+    padding: 0 0px;
+    border-bottom: 1px solid rgba(230, 174, 20, 0.71);;
+}
+
+.head p, .foot p {
+    font-family: "Grey Qo", 'cursive';
+    font-weight: 500;
+    font-style: normal;
+    margin: 5px;
+    padding: 10px;
+    /* background-color: rgba(230, 174, 20, 0.71);; */
+}
+
+#logo_menu {
+    font-size: 32pt;
+}
+
+.menu_container {
+    /*background-color: red;*/
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+    height: auto;
+    width: 20%;
+}
+
+#hamburguer:hover {
+    color: rgba(237, 179, 17, 0.71);
+    cursor: pointer;
+}
+
+#whats_menu {
+    width: 35px;
+    cursor: pointer;
+}
+
+.menu_lista {
+    padding: 10px 20px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #4b4f54;
+    font-size: 16pt;
+    color: white;
+}
+
+nav, ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+li {
+    margin: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 10px;
+    width: 70%;
+    border: 1px solid rgba(230, 174, 20, 0.71);
+    background-color: #A4947E;
+    list-style-type: none;
+    border-radius: 6px 6px 6px 6px;
+    margin: 3px 0px;
+}
+
+li:hover {
+    background-color: rgb(230, 174, 20);
+}
+
+.Paleta {
+    color: rgba(0, 0, 0, 1);
+    color: rgba(166, 159, 149, 1);
+    color: rgba(122, 122, 122,1); 
+    color: rgba(255, 255, 255, 1); 
+    color: rgba(96,107,115,1);
+    color: #A4947E;
+} 
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 12pt;
+    font-family: 'Merriweather', 'serif';
+    background-color: rgb(255, 242, 230);
+    width: 100%;
+    height: auto;
+    justify-content: center;
+}
+
+.apresentacao_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    height: 80%;
+}
+
+.apresentando_me {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12pt !important;
+    margin: 10px 0px 5px 0px;
+    text-align: center;
+}
+
+.apresentando_me > h1 {
+    font-family: 'Gruppo';
+    color: black;
+    font-size: 14pt;
+}
+
+.apresentando_me > h2 {
+    font-family: 'Gruppo';
+    margin: 10px;
+    padding: 0px;
+    font-size: 12pt;
+    
+}
+
+/* isso vai ser alterado para pc */
+#apresentacao_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    max-width: 600px;
+    /* background-color: green !important; */
+}
+
+#foto_apresentacao {
+    width: 70%;
+    max-width: 250px;
+}
+
+/* isso vai ser alterado para pc */
+#apresentacao_texto {
+    height: 100%;
+    width: 100%;
+    word-wrap: break-word;
+    font-family: 'Merriweather', 'serif';
+    font-size: 12pt;
+    /*background-color: rgb(37, 89, 223) !important;*/
+}
+
+.frases_apresentacao p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    word-wrap: break-word;
+    font-size: 12pt;
+    font-weight: bolder;
+    margin: 10px;
+    font-family: 'Gruppo', 'serif';
+}
+
+.p_chamada {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: 10px 0px;
+    background-color: #000000;
+    border-radius: 15px;
+    font-family: 'Merriweather', 'serif';
+    animation-name: anima;
+    animation-duration: 1.3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+}
+
+.btn_chamada {
+    background-color: #2a902d;
+    padding: 5px;
+    width: 100%;
+    height: 50px;
+    border-radius: 15px;
+}
+
+#link_chamada {
+    color: white;
+    font-size: 13pt;
+    text-decoration: none;
+    animation-name: text;
+}
+
+
+@keyframes anima {
+    0% {
+        transform: scale(1.01);
+        transform: rotate(0.3deg);
+        box-shadow: 0.5px 1px 4px rgb(144, 0, 0), 0px 0px 4px rgb(111, 0, 0);
+    }
+
+    50% {
+        transform: rotate(0deg);
+        transform: scale(1.03);
+        box-shadow: 0px 0px 1px rgb(144, 0, 0), 0px 0px 1px rgb(111, 0, 0);
+    }
+    100% {
+        transform: scale(1.01);
+        box-shadow: -0.5px 1px 4px rgb(144, 0, 0), 0px 0px 4px rgb(111, 0, 0);
+        transform: rotate(-0.3deg);
+        
+    }
+}
+
+
+.habilidades {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    width: 90%;
+    height: 100%;
+    flex-direction: column;
+    color: white;
+    background-color: #202332; 
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.secao_head {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(192, 161, 5);
+    border-radius: 15px 15px 0px 0px;
+    padding: 15px;
+    margin-bottom: 10px;
+    font-size: 10px;
+}
+
+.habilidade_el {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #26293D;
+    margin: 0px 0px 10px 0px;
+    font-size: 10px;
+    border: 4px solid rgb(116, 97, 3);;
+    border-radius: 3px 3px 12px 12px;
+}
+
+.habilidade_el h1, h2, h3, span {
+    margin: 5px 15px;
+}
+
+.habilidade_el h3 {
+    font-size: 12px;
+}
+
+#mostrar_contratos, #ocultar_contratos {
+    color: rgb(192, 161, 5);
+}
+
+#mostrar_contratos:hover {
+    cursor: pointer;
+    color: rgb(255, 234, 0);
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    color: white;
+    background-color: #202332;
+    width: 90%;
+    height: 100%;
+    padding: 0px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.contato h1 {
+    font-size: 14pt;
+}
+
+.contato h2 {
+    margin: 10px;
+    font-size: 12pt;
+}
+
+#maps {
+    border-radius: 15px;
+    width: 100%;
+    height: 280px;
+    padding: 8px;
+}
+
+.foot {
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    color: white;
+    background-color: #202332;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    border-top: 1px solid rgba(230, 174, 20, 0.71);
+}
+
+.foot_col {
+    display: flex;
+    font-size: 12pt;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+}
+
+.foot h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10px;
+    font-weight: 200;
+    font-style: normal;
+    margin: 0px;
+    padding: 10px;
+}
+
+.foot h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10px;
+    font-weight: 200;
+    font-style: normal;
+    margin: 0px;
+    padding: 5px;
+}

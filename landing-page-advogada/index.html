@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sa - landing page</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="shortcut icon" href="img/favi_pag.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header id="head" class="head">
+        <p id="logo_menu">Sabrina Santos</p>
+        <div class="menu_container">
+            <div><a href="https://api.whatsapp.com/send/?phone=5515997614296&text=Oi!%20tenho%20interesse%20em%20conversar%20com%20a%20advogada%20Sabrina&type=phone_number&app_absent=0"
+                    target="_blank"><img src="img/logo-whatsapp.png" id="whats_menu" alt="Whatsapp" srcset=""></a></div>
+            <div onclick="menu_view()" class="material-symbols-outlined" id="hamburguer">
+                menu
+            </div>
+        </div>
+    </header>
+    <div id="menu_lista" class="menu_lista">
+        <nav>
+            <ul>
+                <li>Inicio</li>
+                <li>Serviços</li>
+                <li>Localização</li>
+                <li>Sobre nós</li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="divContainer" class="container"> 
+        <div id="apresentacao_container" class="apresentacao_container">
+            <div class="apresentando_me">
+                <h1>
+                    Olá, sou Sabrina, advogada cível!
+                </h1>
+                <h2>
+                    Com experiência e dedicação, estou pronta para defender seus direitos e oferecer soluções jurídicas
+                    eficazes. Seja bem-vindo(a)!
+                </h2>
+            </div>
+            <div id="apresentacao_img" class="apresentacao_el">
+                <img src="img/sa_foto.jpg" alt="Advogada" id="foto_apresentacao">
+            </div>
+            <div id="apresentacao_texto" class="apresentacao_el">
+                <div class="frases_apresentacao">
+                    <p>Está enfrentando problemas com contratos ou acordos?</p>
+                    <p>Quer descobrir se está sendo prejudicado?</p>
+                    <p>Quer saber os seus direitos?</p>
+                    <p>Deseja fazer seu divórcio?</p>
+                </div>
+            </div>
+        </div>
+        <div class="p_chamada">
+            <button class="btn_chamada">
+                <a a href="https://api.whatsapp.com/send/?phone=5515997614296&text=Oi!%20tenho%20interesse%20em%20conversar%20com%20a%20advogada%20Sabrina&type=phone_number&app_absent=0" target="_blank" id="link_chamada">ENTRE EM CONTATO!</a>
+            </button>
+        </div>
+        <div class="habilidades">
+            <div class="secao_head"><h1>ÁREAS DE ATUAÇÃO</h1></div>
+            <div class="habilidade_el">
+                <h1>CONTRATOS</h1>
+                <h2>(Acordos e promessas)</h2>
+                <span class="material-symbols-outlined" style="display: none;" id="ocultar_contratos"
+                    onclick="contratos_el(this)">
+                    expand_circle_up
+                </span>
+                <span class="material-symbols-outlined" id="mostrar_contratos" onclick="contratos_el(this)"
+                    style="display: block;">
+                    expand_circle_down
+                </span>
+                <h3 style="display: none;">Tiramos suas dúvidas a respeito de contratos e acordos de terceiros, te
+                    ajudamos a elaborar os seus próprios contratos e acordos, tudo para garantir de que suas negociações
+                    sejam claras, justas e cumpridas de acordo com a lei</h3>
+            </div>
+            <div class="habilidade_el">
+                <h1>FAMÍLIA</h1>
+                <h2>(Casamento, divórcio, guarda)</h2>
+                <span class="material-symbols-outlined" style="display: none;" id="ocultar_contratos"
+                    onclick="contratos_el(this)">
+                    expand_circle_up
+                </span>
+                <span class="material-symbols-outlined" id="mostrar_contratos" onclick="contratos_el(this)"
+                    style="display: block;">
+                    expand_circle_down
+                </span>
+                <h3 style="display: none;">Cuidamos das questões familiares, como casamento, divórcio e guarda dos
+                    filhos, sempre com empatia e respeito às necessidades dos membros da família</h3>
+            </div>
+            <div class="habilidade_el">
+                <h1>HERANÇA</h1>
+                <h2>(Planejamento e divisão de bens)</h2>
+                <span class="material-symbols-outlined" style="display: none;" id="ocultar_contratos"
+                    onclick="contratos_el(this)">
+                    expand_circle_up
+                </span>
+                <span class="material-symbols-outlined" id="mostrar_contratos" onclick="contratos_el(this)"
+                    style="display: block;">
+                    expand_circle_down
+                </span>
+                <h3 style="display: none;">Ajudamos no planejamento de sua futura herança, e também na justa divisão de
+                    bens daqueles que já se foram, para que os herdeiros recebam sua justa parte</h3>
+            </div>
+            <div class="habilidade_el">
+                <h1>PROPRIEDADE</h1>
+                <h2>(Imóveis e bens)</h2>
+                <span class="material-symbols-outlined" style="display: none;" id="ocultar_contratos"
+                    onclick="contratos_el(this)">
+                    expand_circle_up
+                </span>
+                <span class="material-symbols-outlined" id="mostrar_contratos" onclick="contratos_el(this)"
+                    style="display: block;">
+                    expand_circle_down
+                </span>
+                <h3 style="display: none;">Protegemos suas casas, carros, motos e outros bens, garantindo que sejam
+                    completamente seu, de forma segura</h3>
+            </div>
+            <div class="habilidade_el">
+                <h1>DEFESA DO CONSUMIDOR</h1>
+                <h2>(Direitos nas compras)</h2>
+                <span class="material-symbols-outlined" style="display: none;" id="ocultar_contratos"
+                    onclick="contratos_el(this)">
+                    expand_circle_up
+                </span>
+                <span class="material-symbols-outlined" id="mostrar_contratos" onclick="contratos_el(this)"
+                    style="display: block;">
+                    expand_circle_down
+                </span>
+                <h3 style="display: none;">Defendemos seus direitos como consumidor, para que você seja tratado com
+                    justiça e respeito em todas as suas relações como cliente</h3>
+            </div>
+
+            <div class="habilidade_el">
+                <h1>OBRIGAÇÕES</h1>
+                <h2>(Dívidas e compromissos)</h2>
+                <span class="material-symbols-outlined" style="display: none;" id="ocultar_contratos"
+                    onclick="contratos_el(this)">
+                    expand_circle_up
+                </span>
+                <span class="material-symbols-outlined" id="mostrar_contratos" onclick="contratos_el(this)"
+                    style="display: block;">
+                    expand_circle_down
+                </span>
+                <h3 style="display: none;">Oferecemos suporte jurídico para resolver dívidas e promessas, entendendo
+                    sobre o que pode ser feito juridicamente em sua situação específica</h3>
+            </div>
+        </div>
+        <div class="contato">
+            <div class="secao_head"><h1>ENDEREÇO</h1></div>
+            <h2>Rua Antônio Messias de Freitas, n.º 315, em Capão Bonito - SP</h2>
+            <iframe id="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3645.0678119332465!2d-48.35464642532489!3d-23.993382377604785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c45c49c685f8f5%3A0xa54575ef6361acb2!2sR.%20Ant%C3%B4nio%20Mess%C3%ADas%20de%20Freitas%20-%20Cap%C3%A3o%20Bonito%2C%20SP%2C%2018301-035!5e0!3m2!1spt-BR!2sbr!4v1723902823722!5m2!1spt-BR!2sbr" width=100% height=100% style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <footer class="foot">
+            <div class="foot_col">
+                <p>Sabrina Santos</p>
+            </div>
+            <div class="foot_col">
+
+            </div>
+            <div class="foot_col">
+                <h1>CONTATO</h1>
+                <h2>Tel.: (15) 99999-9999</h2>
+                <h2>Tel.2: (15) 88888-8888</h2>
+                <h2>Instagram: @Advogada_SA</h2>
+                <h2>Links diretos:</h2>
+                <div style="font-size: 10px;"><a
+                        href="https://api.whatsapp.com/send/?phone=5515997614296&text=Oi!%20tenho%20interesse%20em%20conversar%20com%20a%20advogada%20Sabrina&type=phone_number&app_absent=0"
+                        target="_blank"><img src="img/whats_branca.jpg" id="whats_menu" alt="Whatsapp" srcset=""></a>
+                </div>
+                <div style="font-size: 10px;"><a
+                        href="https://api.whatsapp.com/send/?phone=5515997614296&text=Oi!%20tenho%20interesse%20em%20conversar%20com%20a%20advogada%20Sabrina&type=phone_number&app_absent=0"
+                        target="_blank"><img src="img/insta_branca.jpg" id="whats_menu" alt="Insta" srcset=""></a></div>
+            </div>
+        </footer>
+        <script src="script/script.js"></script>
+</body>
+
+</html>
