@@ -334,7 +334,7 @@ li:hover {
 
 
 .habilidade_el {
-    color: black;
+    color: rgb(255, 255, 255);
     width: 100%;
     height: 100%;
     display: flex;
