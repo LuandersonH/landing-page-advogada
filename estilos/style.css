@@ -61,6 +61,7 @@ Extra large devices (large laptops and desktops, 1200px and up)
     box-sizing: border-box;
     border: none;
     text-decoration: none;
+    line-height: 1.5 !important;
 }
 
 html, body {
@@ -303,7 +304,7 @@ html, body {
     margin: 0 auto;
     margin-bottom: 0px;
     padding: 20px;
-    background-color: white;
+    background-color: rgb(233, 212, 201);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   }
 
@@ -371,21 +372,63 @@ html, body {
     height: 100%;
     margin: 0 auto;
     margin-bottom: 0px;
-    padding: 80px 20px 40px 20px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url('../img/faq_bg4.jpg');;
+    padding: 40px 20px 40px 20px;
+    background-image: linear-gradient(rgb(69, 2, 2), rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.7));
     background-position: center center;
     background-repeat: none;
     background-size: cover;
-    box-shadow: 0px 0px 15px rgb(50, 33, 59);
+    /* box-shadow: 0px 0px 15px rgb(50, 33, 59); */
     color: white;
   }
 
-  .processo_titulo {
+.processo_h1 {
+    font-size: 2em;
+    text-align: center;
+    padding-bottom: 40px;
+}
+.processo_titulo {
+    font-size: 1.5em;
     text-align: left;  
     margin-bottom: 10px; 
 }
 
 .processo_texto {
+    font-size: 1em;
+    text-align: justify;   
+    margin-bottom: 40px; 
+}
+
+.faq_container {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    padding: 80px 20px 40px 20px;
+    background-image: linear-gradient(rgba(40, 20, 0, 0.6), rgba(0, 0, 0, 0.8)), url('../img/faq_bg2.jpg');
+    box-shadow: 0px 0px 5px #000000;
+    background-position: center center;
+    background-repeat: none;
+    background-size: cover;
+    color: white;
+}
+
+.faq_h1 {
+    font-size: 2em;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.faq_questao {
+    font-size: 1.5em;
+    text-align: left;  
+    margin-bottom: 10px; 
+}
+
+.faq_resposta {
+    font-size: 1em;
     text-align: justify;   
     margin-bottom: 40px; 
 }
