@@ -92,7 +92,7 @@ html, body {
     align-items: flex-start;
     font-size: 12pt;
     font-family: 'Merriweather', 'serif';
-    background-image: linear-gradient(to bottom, #351a1a, #c84242);
+    background-color: white;
     width: 100%;
     height: auto;
     justify-content: center;
@@ -305,7 +305,7 @@ html, body {
     margin-bottom: 0px;
     padding: 20px;
     background-color: rgb(233, 212, 201);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 100px rgb(0, 0, 0);
   }
 
 .habilidade_el {
@@ -373,7 +373,7 @@ html, body {
     margin: 0 auto;
     margin-bottom: 0px;
     padding: 40px 20px 40px 20px;
-    background-image: linear-gradient(rgb(69, 2, 2), rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.7));
+    background-image: linear-gradient(rgb(69, 2, 2), rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.8));
     background-position: center center;
     background-repeat: none;
     background-size: cover;
@@ -507,3 +507,31 @@ html, body {
   .fas {
     margin-right: 5px;
   }
+
+  @media screen and (min-width: 768px) {
+    
+    .problemas_container {
+        /* ... outros estilos ... */
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; /* Permite que os elementos "problemas_el" quebrem para a próxima linha */
+        justify-content: space-around; /* Distribui os elementos igualmente no espaço disponível */
+        padding: 30px;
+    }
+    
+    .problemas_el {
+        /* ... outros estilos ... */
+        width: 40%; /* Define a largura de cada elemento para que caibam dois por linha */
+    }
+    
+    .p_chamada {
+        /* ... outros estilos ... */
+        width: 100%; /* Garante que o botão ocupe toda a largura da linha */
+    }
+
+    
+    .foto_apresentacao {
+        max-width: 200px !important;
+    }
+}
+
