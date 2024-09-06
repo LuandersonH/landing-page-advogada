@@ -112,9 +112,8 @@ html, body {
     width: 100%;
     height: 95vh;
 
-    padding: 15px;
+    padding: 15px 15px;
     color: white;
-
     font-size: 14pt;
     text-align: left;
 }
@@ -142,6 +141,10 @@ html, body {
     padding-top: 50px;
 }
 
+
+#problemas_pergunta {
+    width: 100%;
+}
 
 .problemas_el {
     display: flex;
@@ -219,23 +222,33 @@ html, body {
 }
 
 #foto_apresentacao {
-    width: 100%;
+    width: 90%;
     border-radius: 20px 50px 20px 20px;
-    max-width: 600px;
+    max-width: 500px;
 }
 
 /* isso vai ser alterado para pc */
 #apresentacao_texto {
+    display: flex;
     height: 100%;
-    width: 100%;
+    width: 90%;
     padding: 10px;
+    
+
+}
+
+#pergunta_apresentacao {
+    text-align: center;
+    font-size: 1.5em !important;
+    font-weight: bolder; 
+    font-style: oblique;
 }
 
 .frases_apresentacao p {
     display: flex;
     flex-direction: column;
     text-align: left;
-    font-size: 12pt;
+    font-size: 1.2em;
     margin: 10px;
 }
 
@@ -319,15 +332,20 @@ html, body {
 
 .habilidades_container h1 {
     margin: 15px 0px;
+    font-size: 2em;
 }
 
 .habilidade_el h2, h3, span {
     font-weight: 200;
     margin: 5px 15px;
+    font-size: 1.5em;
+
 }
 
 .habilidade_el p {
+    max-width: 700px;
     margin: 10px;
+    font-size: 1.2em;
 }
 
 #mostrar_contratos, #ocultar_contratos {
@@ -367,13 +385,14 @@ html, body {
 .processo_container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-items: center;
     width: 100%;
     height: 100%;
     margin: 0 auto;
     margin-bottom: 0px;
     padding: 40px 20px 40px 20px;
-    background-image: linear-gradient(rgb(69, 2, 2), rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.8));
+    background-image: linear-gradient(rgb(69, 2, 2), rgba(0, 0, 0, 0.95));
     background-position: center center;
     background-repeat: none;
     background-size: cover;
@@ -491,47 +510,56 @@ html, body {
 
 
 .hr_black {
-    width: 80%;
+    width: 60%;
+    max-width: 800px;
     height: 1px;
     border: 1px solid #000000;
     margin: 20px;
   }
 
 .hr_white {
-    width: 80%;
+    width: 100%;
     height: 1px;
     border: 1px solid #ffffff;
-    margin: 20px;
-  }
-
-  .fas {
-    margin-right: 5px;
+    margin: 20px auto;
+    
   }
 
   @media screen and (min-width: 768px) {
     
+    .p_chamada {
+        width: 70%;
+        scale: 1.1;
+    }
+
+
     .problemas_container {
-        /* ... outros estilos ... */
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap; /* Permite que os elementos "problemas_el" quebrem para a próxima linha */
-        justify-content: space-around; /* Distribui os elementos igualmente no espaço disponível */
-        padding: 30px;
+        flex-wrap: wrap; 
+        justify-content: space-around;
+        padding: 40px;
     }
     
     .problemas_el {
-        /* ... outros estilos ... */
-        width: 40%; /* Define a largura de cada elemento para que caibam dois por linha */
+        width: 40%; 
     }
-    
-    .p_chamada {
-        /* ... outros estilos ... */
-        width: 100%; /* Garante que o botão ocupe toda a largura da linha */
-    }
-
-    
+        
     .foto_apresentacao {
         max-width: 200px !important;
     }
+
+    .chamada_container { 
+        padding: 15px 40px;
+    }
+
+    .problema_emt {
+        width: 60%;
+    }
+
+    .processo_h1, .processo_titulo, .processo_texto {
+        width: 80%;
+    }
+
 }
 

@@ -11,7 +11,6 @@ function contratos_el(btn) {
     area_texto = btn.parentNode.lastElementChild;
     
     if (btn.previousElementSibling.nodeName =="SPAN" ) {
-        console.log("é span");
             if (btn.style.display=="block") {
             btn.style.display="none";
             btn.previousElementSibling.style.display="block";
